@@ -14,13 +14,19 @@
 .option{
 	height: 25vh;
 	width: 25%;
+	margin-top: auto;
+	background: black;
+	border: 3px solid green;
 
 }
 .picture{
-	display:flex;
-	max-width: 100%;
-	flex-direction: row;
-	justify-content: space-between;
+	/*display:flex;*/
+	max-width: 90%;
+	height: 90%;
+	/*flex-direction: row;*/
+	border: solid 2px blue;
+	border-radius: 50%
+	
 }
 
 @media only screen and (max-width: 450px){
