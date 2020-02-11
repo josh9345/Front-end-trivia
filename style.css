@@ -1,36 +1,83 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 .displayBox{
 	display: flex;
-	border: 1px solid black;
-	/*border-radius: 25%;*/
-	height: 90vh;
-	width: 100%;
+	height: 30vh;
+	width: 90%;
 	margin: 0 auto;
-	
+	justify-content: space-between;
+
+}
+.container{
+	width:100%;
+	height: 75vh;
 }
 .option{
-	height: 25vh;
+	height: 100%;
 	width: 25%;
 	margin-top: auto;
-	background: black;
-	border: 3px solid green;
-
+	margin-right: 20px;
+	border: none;
+	justify-content: space-around;
+	border-radius: 25%;
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.35)
 }
-.picture{
-	/*display:flex;*/
-	max-width: 90%;
-	height: 90%;
-	/*flex-direction: row;*/
-	border: solid 2px blue;
-	border-radius: 50%
+.option:hover{
+	height: 50vh;
+	width: 75%;
 	
 }
+.picture{
+	width: 100%;
+	height: 100%;
+	
+	border-radius: 25%
 
-@media only screen and (max-width: 450px){
-	.option{
-		margin-top: 90%;
-	}
+	
+}
+.question{
+	height: 30vh;
+	width: 100%;
+	margin: 0 auto;
+	color: white;
+}
+.questionBox{
+width: 100%;
+height: 35vh;
+}
+/*.head{
+	background-image: url('https://images4.alphacoders.com/241/thumb-1920-241808.jpg');
+	background-position: 50% 50%;
+	background-size: 100%;
+	height: 35vh;
+	width: 100%;
+	border-bottom: 5px solid black;
+
+}*/
+.overlay{
+	position: fixed;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: blue;
+	cursor: pointer;
+}
+
+h2{
+	text-align: center;
+}
+body{
+	background-image: url(https://media2.giphy.com/media/B2eg9CmW4i9ZC/giphy.gif?cid=790b7611f58c5ba4af571b21f8b8bea159649313cb4a10e1&rid=giphy.gif);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+
 }
