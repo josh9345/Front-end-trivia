@@ -1,0 +1,2 @@
+let picture = document.querySelector('.picture')
+picture.setAttribute('src', 'https://cosmos-images2.imgix.net/file/spina/photo/18032/190218-mount-full.jpg?ixlib=rails-2.1.4&auto=format&ch=Width%2CDPR&fit=max&w=1600')

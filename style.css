@@ -1,9 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 .displayBox{
 	display: flex;
 	border: 1px solid black;
-	border-radius: 25%;
-	height: 60vh;
-	width: 60%;
+	/*border-radius: 25%;*/
+	height: 90vh;
+	width: 100%;
 	margin: 0 auto;
-	margin-top: 20vh;
+	
+}
+.option{
+	height: 25vh;
+	width: 25%;
+
+}
+.picture{
+	display:flex;
+	max-width: 100%;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 450px){
+	.option{
+		margin-top: 90%;
+	}
 }
