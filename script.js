@@ -15,6 +15,7 @@ let b = document.querySelector('#second')
 let c = document.querySelector('#third')
 let d = document.querySelector('#fourth')
 let picture = document.querySelectorAll('.picture')
+let button = document.querySelector('.overlayButton')
 
 a.setAttribute('src', ornstein)
 b.setAttribute('src', artorias)
@@ -26,3 +27,6 @@ for(let i=0; i<picture.length; i++){
 		alert("hello")
 	})
 }
+button.addEventListener('click', function(){
+	document.querySelector('.overlay').style.display = 'none'
+})
