@@ -7,16 +7,24 @@ let mirrorKnight = 'https://66.media.tumblr.com/468694ded87230e73d756e7dd9788832
 let midir = 'https://vignette.wikia.nocookie.net/darksouls/images/6/6c/Midir_rises_%282%29.jpg/revision/latest?cb=20170404185337'
 let yhorm = 'https://bbts1.azureedge.net/images/p/full/2019/10/43f823e0-dde6-4180-b3c8-237159cf36b0.jpg'
 let nameless = 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bbb2559b-70e8-45e9-8491-e19a0b3eddf6/da01hod-8172a926-bd6a-4c11-a519-775bdb2b7594.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JiYjI1NTliLTcwZTgtNDVlOS04NDkxLWUxOWEwYjNlZGRmNlwvZGEwMWhvZC04MTcyYTkyNi1iZDZhLTRjMTEtYTUxOS03NzViZGIyYjc1OTQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.fQIQ4l3x89mITNo1AJ1altzCT9QLdO61btij6snygwQ'
-// let gael = ''
-// let lorian = ''
-// let crystalSage = ''
-// let capraDemon = ''
-// let taurusDemon = ''
-// let asylum demon = ''
+let gael = 'https://images-cdn.9gag.com/photo/adLpX2B_460s.jpg'
+let lorian = 'https://cdna.artstation.com/p/assets/images/images/005/765/118/large/fadly-romdhani-lorian-lothric-fan-art.jpg?1493626239'
+let crystalSage = 'https://cdna.artstation.com/p/assets/images/images/009/590/308/large/storm-ruler-s1-2.jpg?1519830207'
+let capraDemon = 'https://i.pinimg.com/originals/a1/6b/a5/a16ba55a38c86709d245a27a2493ea11.png'
+let taurusDemon = 'https://i.pinimg.com/originals/d1/fd/4d/d1fd4d1929158b0d6e01140043a85486.jpg'
+let asylumDemon = 'https://cdna.artstation.com/p/assets/images/images/002/496/246/large/eh-macmillan-asylum-demon.jpg?1462425061'
 
-let questions = {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral"
-}
+let questions = [{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+}];
+
 
 let a = document.querySelector('#first')
 let b = document.querySelector('#second')
@@ -24,20 +32,23 @@ let c = document.querySelector('#third')
 let d = document.querySelector('#fourth')
 let picture = document.querySelectorAll('.picture')
 let button = document.querySelector('.overlayButton')
-let question = document.querySelector('.question').innerText = questions.question;
-// let sound = document.querySelector('.audio')
-
-a.setAttribute('src', nameless)
-b.setAttribute('src', mirrorKnight)
-c.setAttribute('src', midir)
-d.setAttribute('src', yhorm)
+let questionText = document.querySelector('.question').innerText = questions.question;
 
 
-for(let i=0; i<picture.length; i++){
-	picture[i].addEventListener('click', function(){
-		alert("hello")
-	})
-}
+for(let i=0; i<2; i++){
+	a.setAttribute('src', questions[i].answers[0])
+	b.setAttribute('src', questions[i].answers[1])
+	c.setAttribute('src', questions[i].answers[2])
+	d.setAttribute('src', questions[i].answers[3])
+
+	 picture[i].addEventListener('click', function(event){
+	 	console.dir(event)
+	 	if(event.target.dataset.number == questions[i].correct){
+	 		alert("Good job")
+	 	}
+	 })
+	}
+
 button.addEventListener('click', function(){
 	document.querySelector('.overlay').style.left = "-100%"
 	document.querySelector('.overlay').style.opacity = "0"
