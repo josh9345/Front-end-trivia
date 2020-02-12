@@ -74,12 +74,14 @@ height: 35vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: all 0.9s linear;
+	transition-delay: .2s;
 }
 .overlayText{
 	position: relative;
 	margin-bottom: 1%;
 	right: -100%;
 	-webkit-animation: slideRight 1s forwards;
+	/*-webkit-animation-delay:.5s;*/
 
 }
 @-webkit-keyframes slideRight{
@@ -90,17 +92,18 @@ height: 35vh;
 	padding-bottom: 2%;
 	right: -100%;
 	-webkit-animation: slideRight 1s forwards;
+	/*-webkit-animation-delay:.5s;*/
 }
 .overlayButton{
 	position: absolute;
 width: 10%;
 height: 10%;
 background: black;
-left: -100px;
+left: -100%;
 color: white;
 border-color: grey;
 -webkit-animation: slideIn 1s forwards;
--webkit-animation-delay:1s;
+/*-webkit-animation-delay: 1.5s;*/
 }
 @-webkit-keyframes slideIn{
 	100% {left: 45%;}
