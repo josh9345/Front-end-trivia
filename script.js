@@ -25,33 +25,33 @@ let questions = [{
 	correct: 1
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
+	question: "Knight, who challenges visitors to the lordless castle. Long ago, the King's Passage was a route taken by the bravest warriors to prove themselves, but now it only prevents one from pursuing the runaway king.",
+	answers: [capraDemon, yhorm, mirrorKnight, asylumDemon],
+	correct: 2
+},
+{
+	question: "this mage once served as spiritual guides to the scholars of the Grand Archives and one went on to ally with the Undead Legion of Farron.",
+	answers: [siegmeyer, solaire, yhorm, crystalSage],
+	correct: 3
 },
 {
 	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
+	answers: [gael, seath, taurusDemon, lorian],
+	correct: 1
 },
 {
 	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
+	answers: [capraDemon, nameless, mirrorKnight, artorias],
+	correct: 3
 },
 {
 	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
+	answers: [taurusDemon, solaire, capraDemon, yhorm],
+	correct: 2
 },
 {
 	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
-},
-{
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
+	answers: [nameless, gael, solaire, asylumDemon],
 	correct: 0
 },
 {
@@ -98,6 +98,8 @@ let d = document.querySelector('#fourth')
 let picture = document.querySelectorAll('.picture')
 let button = document.querySelector('.overlayButton')
 let questionText = document.querySelector('.question')
+let questionBox = document.querySelector('.questionBox')
+let answerButton = document.querySelectorAll('.option')
 let turn = 0;
 // for(let i=0; i<picture.length; i++){
 // 	picture[i].addEventListener('click', checkAnswer)
@@ -118,6 +120,7 @@ function changeAnswer(){
 	b.setAttribute('src', questions[turn].answers[1])
 	c.setAttribute('src', questions[turn].answers[2])
 	d.setAttribute('src', questions[turn].answers[3])
+	questionText.innerText=questions[turn].question
 
 }
 for(let i=0; i<picture.length; i++){
@@ -135,6 +138,10 @@ for(let i=0; i<picture.length; i++){
 button.addEventListener('click', function(){
 	document.querySelector('.overlay').style.left = "-100%"
 	document.querySelector('.overlay').style.opacity = "0"
-	document.querySelector('.audio').play();
+	questionText.style.WebkitAnimation = 'slideRight 1s forwards'
+	a.style.WebkitAnimaton ='slideRight 1s forwards' 
+
+
+
 })
 
