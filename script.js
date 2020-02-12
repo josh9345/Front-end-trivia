@@ -20,10 +20,75 @@ let questions = [{
 	correct: 0
 },
 {
+	question: "a skilled knight of Lothric in his past, Before Lorian embraced his brother's curse, he was a knight who single handedly slayed the demon prince, but the victory eternally scorched his sword with flame, the curse left him crippled and mute.",
+	answers: [taurusDemon, lorian, mirrorKnight, gael],
+	correct: 1
+},
+{
 	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
 	answers: [ornstein, solaire, mirrorKnight, lorian],
 	correct: 0
-}];
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [ornstein, solaire, mirrorKnight, lorian],
+	correct: 0
+},
+{
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	answers: [taurusDemon, solaire, mirrorKnight, lorian],
+	correct: 0
+}]
 
 
 let a = document.querySelector('#first')
@@ -32,22 +97,40 @@ let c = document.querySelector('#third')
 let d = document.querySelector('#fourth')
 let picture = document.querySelectorAll('.picture')
 let button = document.querySelector('.overlayButton')
-let questionText = document.querySelector('.question').innerText = questions.question;
+let questionText = document.querySelector('.question')
+let turn = 0;
+// for(let i=0; i<picture.length; i++){
+// 	picture[i].addEventListener('click', checkAnswer)
+// }
+// function checkAnswer(){
+// 	 	if(event.target.dataset.number == questions[i].correct){
+// 	 		alert("Good job")
+// 	 	}
+// }
+	a.setAttribute('src', questions[turn].answers[0])
+	b.setAttribute('src', questions[turn].answers[1])
+	c.setAttribute('src', questions[turn].answers[2])
+	d.setAttribute('src', questions[turn].answers[3])
+	questionText.innerText=questions[turn].question
 
+function changeAnswer(){
+	a.setAttribute('src', questions[turn].answers[0])
+	b.setAttribute('src', questions[turn].answers[1])
+	c.setAttribute('src', questions[turn].answers[2])
+	d.setAttribute('src', questions[turn].answers[3])
 
-for(let i=0; i<2; i++){
-	a.setAttribute('src', questions[i].answers[0])
-	b.setAttribute('src', questions[i].answers[1])
-	c.setAttribute('src', questions[i].answers[2])
-	d.setAttribute('src', questions[i].answers[3])
-
-	 picture[i].addEventListener('click', function(event){
-	 	console.dir(event)
-	 	if(event.target.dataset.number == questions[i].correct){
+}
+for(let i=0; i<picture.length; i++){
+	picture[i].addEventListener('click', function(event){
+		if(event.target.dataset.number == questions[turn].correct){
 	 		alert("Good job")
+	 		turn++
+	 		changeAnswer();
+	 		return turn;
 	 	}
-	 })
-	}
+	})
+}
+
 
 button.addEventListener('click', function(){
 	document.querySelector('.overlay').style.left = "-100%"
