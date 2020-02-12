@@ -75,10 +75,21 @@ height: 35vh;
 	background-repeat: no-repeat;
 	transition: all 0.9s linear;
 }
-.video{
-	margin: 0 auto;
-	height:50%;
-	width: 50% ;
+.overlayText{
+	position: relative;
+	margin-bottom: 1%;
+	right: -100%;
+	-webkit-animation: slideRight 1s forwards;
+
+}
+@-webkit-keyframes slideRight{
+	100% {right: 0;}
+}
+.overlayText2{
+	position: relative;
+	padding-bottom: 2%;
+	right: -100%;
+	-webkit-animation: slideRight 1s forwards;
 }
 .overlayButton{
 	position: absolute;
@@ -89,6 +100,7 @@ left: -100px;
 color: white;
 border-color: grey;
 -webkit-animation: slideIn 1s forwards;
+-webkit-animation-delay:1s;
 }
 @-webkit-keyframes slideIn{
 	100% {left: 45%;}
