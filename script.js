@@ -3,12 +3,9 @@ let artorias =  'https://res.cloudinary.com/cook-becker/image/fetch/q_auto:best,
 let solaire = 'https://i.kym-cdn.com/photos/images/newsfeed/000/692/868/558.jpg' 
 let siegmeyer = 'https://giantbomb1.cbsistatic.com/uploads/scale_small/12/120355/2283627-sig.jpg'
 
-// let questions = [{
-// 	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral"
-// 	answers: []
-// 	correct: 
-
-// }]
+let questions = {
+	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral"
+}
 
 let a = document.querySelector('#first')
 let b = document.querySelector('#second')
@@ -16,11 +13,13 @@ let c = document.querySelector('#third')
 let d = document.querySelector('#fourth')
 let picture = document.querySelectorAll('.picture')
 let button = document.querySelector('.overlayButton')
+let question = document.querySelector('.question').innerText = questions.question;
 
 a.setAttribute('src', ornstein)
 b.setAttribute('src', artorias)
 c.setAttribute('src', solaire)
 d.setAttribute('src', siegmeyer)
+
 
 for(let i=0; i<picture.length; i++){
 	picture[i].addEventListener('click', function(){
@@ -28,5 +27,6 @@ for(let i=0; i<picture.length; i++){
 	})
 }
 button.addEventListener('click', function(){
-	document.querySelector('.overlay').style.display = 'none'
+	document.querySelector('.overlay').style.left = "-100%"
+	document.querySelector('.overlay').style.opacity = "0"
 })

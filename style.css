@@ -23,12 +23,12 @@
 	border: none;
 	justify-content: space-around;
 	border-radius: 25%;
-	box-shadow: 10px 10px rgba(0, 0, 0, 0.35)
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.2)
 }
 .option:hover{
 	height: 50vh;
 	width: 75%;
-	
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.5)
 }
 .picture{
 	width: 100%;
@@ -42,7 +42,7 @@
 	height: 30vh;
 	width: 100%;
 	margin: 0 auto;
-	color: white;
+	color: black;
 }
 .questionBox{
 width: 100%;
@@ -60,7 +60,7 @@ height: 35vh;
 .overlay{
 	position: fixed;
 	display: block;
-	color: black;
+	color: orange;
 	text-align: center;
 	width: 100%;
 	height: 100%;
@@ -68,9 +68,12 @@ height: 35vh;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-image: url(https://images6.alphacoders.com/876/thumb-1920-876133.jpg);
-	background-position: 50% 50%;
+	opacity: 1;
+	background-image: url(https://media2.giphy.com/media/B2eg9CmW4i9ZC/giphy.gif?cid=790b7611f58c5ba4af571b21f8b8bea159649313cb4a10e1&rid=giphy.gif);
+	background-position: 70% 30%;
 	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 0.9s linear;
 }
 .video{
 	margin: 0 auto;
@@ -78,16 +81,26 @@ height: 35vh;
 	width: 50% ;
 }
 .overlayButton{
-
+	position: absolute;
+width: 10%;
+height: 10%;
+background: black;
+left: -100px;
+color: white;
+border-color: grey;
+-webkit-animation: slideIn 1s forwards;
+}
+@-webkit-keyframes slideIn{
+	100% {left: 45%;}
 }
 
 h2{
 	text-align: center;
 }
 body{
-	background-image: url(https://media2.giphy.com/media/B2eg9CmW4i9ZC/giphy.gif?cid=790b7611f58c5ba4af571b21f8b8bea159649313cb4a10e1&rid=giphy.gif);
+	background-image: url(https://images6.alphacoders.com/876/thumb-1920-876133.jpg);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	background-size: cover;
+	background-size: all;
 
 }
