@@ -101,6 +101,8 @@ let questionText = document.querySelector('.question')
 let questionBox = document.querySelector('.questionBox')
 let answerButton = document.querySelectorAll('.option')
 let turn = 0;
+let display = document.querySelectorAll('.displayBox')
+let welcomeButton = document.querySelector('.welcomeButton')
 // for(let i=0; i<picture.length; i++){
 // 	picture[i].addEventListener('click', checkAnswer)
 // }
@@ -138,10 +140,12 @@ for(let i=0; i<picture.length; i++){
 button.addEventListener('click', function(){
 	document.querySelector('.overlay').style.left = "-100%"
 	document.querySelector('.overlay').style.opacity = "0"
+	document.querySelector('.audio').play();
 	questionText.style.WebkitAnimation = 'slideRight 1s forwards'
 	a.style.WebkitAnimaton ='slideRight 1s forwards' 
 
-
-
+})
+welcomeButton.addEventListener('click', function(){
+	document.querySelector('.welcome').style.left = '-100%'
 })
 
