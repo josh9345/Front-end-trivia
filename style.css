@@ -132,7 +132,7 @@ background: black;
 left: -100%;
 color: white;
 border-color: grey;
-margin-top: 60%;
+margin-top: 40%;
 -webkit-animation: slideIn 1s forwards;
 }
 @-webkit-keyframes slideIn{
