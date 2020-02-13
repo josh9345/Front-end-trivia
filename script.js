@@ -55,7 +55,7 @@ let questions = [{
 	correct: 1
 },
 {
-	question: "once a God of War, and was said to have respect only for arms and nothing else, and wielded the Sunlight Blade and Great Lightning Spear miracles. At some point, he sacrificed everything to ally himself with the Ancient Dragons, the very creatures he had once hunted.",
+	question: "once a God of War, and was said to have respect only for arms and nothing else, and wielded the Sunlight Blade and Great Lightning Spear miracles. At some point, he sacrificed everything to ally himself with the Ancient Dragons.",
 	answers: [nameless, taurusDemon, seath, lorian],
 	correct: 0
 },
@@ -70,7 +70,7 @@ let questions = [{
 	correct: 1
 },
 {
-	question: "a member of the Warriors of Sunlight covenant who appears in several areas. He is a cheerful and powerful knight who does not let the crumbling world affect his mood. He speaks of willingly becoming an Undead so that he could search for his own sun.",
+	question: "a member of the Warriors of Sunlight covenant. He is a cheerful and powerful knight who does not let the crumbling world affect his mood. He speaks of willingly becoming an Undead so that he could search for his own sun.",
 	answers: [nameless, mirrorKnight, solaire, seath],
 	correct: 2
 },
@@ -118,12 +118,17 @@ let welcomeButton = document.querySelector('.welcomeButton')
 	questionText.innerText=questions[turn].question
 
 function changeAnswer(){
+	if(turn === 15){
+	alert('congrats')
+}
+else{
 	a.setAttribute('src', questions[turn].answers[0])
 	b.setAttribute('src', questions[turn].answers[1])
 	c.setAttribute('src', questions[turn].answers[2])
 	d.setAttribute('src', questions[turn].answers[3])
 	questionText.innerText=questions[turn].question
-
+}
+document.querySelector('.score').innerText = `Score: ${turn} `
 }
 for(let i=0; i<picture.length; i++){
 	picture[i].addEventListener('click', function(event){
