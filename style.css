@@ -178,7 +178,14 @@ body{
 	.overlayButton{
 		margin-top: 65%;
 		width: 20%;
+		margin-left: 15px;
 	}
+	.option{
+		height: 70%;
+	}
+/*	.picture{
+		height: 70%;
+	}*/
 /*	body{
 		background-size: 100vh;
 		height: 800px;
