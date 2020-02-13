@@ -20,7 +20,7 @@ let questions = [{
 	correct: 0
 },
 {
-	question: "a skilled knight of Lothric in his past, Before Lorian embraced his brother's curse, he was a knight who single handedly slayed the demon prince, but the victory eternally scorched his sword with flame, the curse left him crippled and mute.",
+	question: "a skilled knight of Lothric in his past, Before he embraced his brother's curse, he was a knight who single handedly slayed the demon prince, but the victory eternally scorched his sword with flame, the curse left him crippled and mute.",
 	answers: [taurusDemon, lorian, mirrorKnight, gael],
 	correct: 1
 },
@@ -31,63 +31,63 @@ let questions = [{
 },
 {
 	question: "this mage once served as spiritual guides to the scholars of the Grand Archives and one went on to ally with the Undead Legion of Farron.",
-	answers: [siegmeyer, solaire, yhorm, crystalSage],
-	correct: 3
+	answers: [siegmeyer, solaire, crystalSage, yhorm],
+	correct: 2
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	question: "an uncle-like figure to the Painter. Though his exact relation is unknown, he certainly resided in the Painted World for some time, at least until the Painter was locked up.",
 	answers: [gael, seath, taurusDemon, lorian],
-	correct: 1
+	correct: 0
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	question: "Also known as the 'Abysswalker', was one of the four knights of Gwyn. His grave, marked with his greatsword, is placed at the Oolacile Sanctuary area (later known as the Darkroot Garden) and is guarded by Sif",
 	answers: [capraDemon, nameless, mirrorKnight, artorias],
 	correct: 3
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
+	question: "This demon resides in the Lower Undead Burg. It is a lesser demon resembling a human with a goat's head, wielding two large machetes",
 	answers: [taurusDemon, solaire, capraDemon, yhorm],
 	correct: 2
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [nameless, gael, solaire, asylumDemon],
+	question: "A Lord of Cinder, and the only giant among them, he likely chose to link the flame because of his sense of duty and loyalty to the people he ruled.",
+	answers: [asylumDemon, yhorm, nameless, artorias],
+	correct: 1
+},
+{
+	question: "once a God of War, and was said to have respect only for arms and nothing else, and wielded the Sunlight Blade and Great Lightning Spear miracles. At some point, he sacrificed everything to ally himself with the Ancient Dragons, the very creatures he had once hunted.",
+	answers: [nameless, taurusDemon, seath, lorian],
 	correct: 0
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
+	question: "This demon is located on the walkway after ascending the tower with the spiral staircase in the Undead Burg. It wields a massive greataxe",
+	answers: [midir, mirrorKnight, gael, taurusDemon],
+	correct: 3
+},
+{
+	question: "A descendant of Archdragons, was raised by the gods, and owing to his immortality was given a duty to eternally battle the dark, a duty that he would never forget, even after the gods perished.",
+	answers: [seath, midir, asylumDemon, solaire],
+	correct: 1
+},
+{
+	question: "a member of the Warriors of Sunlight covenant who appears in several areas. He is a cheerful and powerful knight who does not let the crumbling world affect his mood. He speaks of willingly becoming an Undead so that he could search for his own sun.",
+	answers: [nameless, mirrorKnight, solaire, seath],
+	correct: 2
+},
+{
+	question: "A knight from Catarina who has come to Lordran seeking adventure and excitement, though he isn't totally prepared for it, and his daughter, Sieglinde, is against it",
+	answers: [siegmeyer, gael, lorian, crystalSage],
 	correct: 0
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
+	question: "this demon was created by the Bed of Chaos and ensures that only the most powerful Undead are able to escape the Northern Undead Asylum.",
+	answers: [taurusDemon, gael, yhorm, asylumDemon],
 	correct: 0
 },
 {
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
-},
-{
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
-},
-{
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
-},
-{
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [ornstein, solaire, mirrorKnight, lorian],
-	correct: 0
-},
-{
-	question: "A Dragon Slayer loyal to lord Gwyn and one of his four knights, he and executioner Smough gaurd the ruined cathedral",
-	answers: [taurusDemon, solaire, mirrorKnight, lorian],
-	correct: 0
+	question: "A dragon without scales therefore lacking immortality, granted the title of Duke by Lord Gwyn for his assistance in defeating the Everlasting Dragons. He was also given a fragment of a Lord Soul along with his dukedom.",
+	answers: [taurusDemon, seath, siegmeyer, midir],
+	correct: 1
 }]
 
 
