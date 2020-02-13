@@ -149,7 +149,7 @@ body{
 	background-position: 50% 50%;
 
 }
-/*@media only screen and (min-width: 495px){
+@media only screen and (min-width: 495px){
 	.overlayButton{
 		margin-top: 35%;
 	}
@@ -159,18 +159,18 @@ body{
 		margin-top: 65%;
 		width: 20%;
 	}
-	body{
+/*	body{
 		background-size: 100vh;
 		height: 800px;
-		width: 100vh;
-	}
+		width: 100vh;*/
+	
 	html{
 		background-size: all;
 	}
 	.container{
 		height: 100vh;
 	}
-}*/
+}
 /*@media only screen and (max-width: 600px){
 	.overlayButton{
 		margin-top: 75%%;

@@ -147,5 +147,9 @@ button.addEventListener('click', function(){
 })
 welcomeButton.addEventListener('click', function(){
 	document.querySelector('.welcome').style.left = '-100%'
+	document.querySelector('.fire').play();
 })
+if(turn === 15){
+	alert('good job!')
+}
 
