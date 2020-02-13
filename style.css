@@ -160,11 +160,11 @@ body{
 		margin-top: 65%;
 		width: 20%;
 	}
-/*	body{
-		background-size: cover;
+	body{
+		background-size: 100vh;
 		height: 800px;
 		width: 100vh;
-	}*/
+	}
 	html{
 		background-size: all;
 	}
@@ -172,8 +172,8 @@ body{
 		height: 100vh;
 	}
 }
-@media only screen and (max-width: 600px){
+/*@media only screen and (max-width: 600px){
 	.overlayButton{
 		margin-top: 75%%;
 	}
-}
+}*/
