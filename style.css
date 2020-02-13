@@ -42,10 +42,9 @@
 .question{
 	position: relative;
 	right: -150%;
-	height: 30vh;
+	height: 20vh;
 	width: 100%;
 	color: white;
-	border: 2px solid black;
 	background: rgba(0, 0, 0, 0.7);
 
 
@@ -150,7 +149,7 @@ body{
 	background-position: 50% 50%;
 
 }
-@media only screen and (min-width: 495px){
+/*@media only screen and (min-width: 495px){
 	.overlayButton{
 		margin-top: 35%;
 	}
@@ -171,7 +170,7 @@ body{
 	.container{
 		height: 100vh;
 	}
-}
+}*/
 /*@media only screen and (max-width: 600px){
 	.overlayButton{
 		margin-top: 75%%;
