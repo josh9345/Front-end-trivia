@@ -82,7 +82,7 @@ let questions = [{
 {
 	question: "this demon was created by the Bed of Chaos and ensures that only the most powerful Undead are able to escape the Northern Undead Asylum.",
 	answers: [taurusDemon, gael, yhorm, asylumDemon],
-	correct: 0
+	correct: 3
 },
 {
 	question: "A dragon without scales therefore lacking immortality, granted the title of Duke by Lord Gwyn for his assistance in defeating the Everlasting Dragons. He was also given a fragment of a Lord Soul along with his dukedom.",
@@ -119,7 +119,7 @@ let welcomeButton = document.querySelector('.welcomeButton')
 
 function changeAnswer(){
 	if(turn === 15){
-	alert('congrats')
+	document.querySelector('.winMessage').style.right = '0'
 }
 else{
 	a.setAttribute('src', questions[turn].answers[0])
@@ -133,10 +133,12 @@ document.querySelector('.score').innerText = `Score: ${turn} `
 for(let i=0; i<picture.length; i++){
 	picture[i].addEventListener('click', function(event){
 		if(event.target.dataset.number == questions[turn].correct){
-	 		alert("Good job")
 	 		turn++
 	 		changeAnswer();
 	 		return turn;
+	 	}
+	 	else{
+	 		alert("try again")
 	 	}
 	})
 }
