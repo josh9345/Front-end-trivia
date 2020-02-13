@@ -128,7 +128,7 @@ height: 35vh;
 position: absolute;
 width: 30%;
 height: 10%;
-margin-bottom: 5%;
+margin-bottom: auto;
 background: black;
 left: -100%;
 color: white;
@@ -150,19 +150,21 @@ body{
 	background-position: 50% 50%;
 
 }
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 495px){
 	.overlayButton{
 		margin-top: 35%;
 	}
 }
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 450px){
 	.overlayButton{
 		margin-top: 65%;
 		width: 20%;
 	}
-	body{
-		background-size: stretch;
-	}
+/*	body{
+		background-size: cover;
+		height: 800px;
+		width: 100vh;
+	}*/
 	html{
 		background-size: all;
 	}
