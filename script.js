@@ -20,22 +20,22 @@ let questions = [{
 	correct: 0
 },
 {
-	question: "a skilled knight of Lothric in his past, Before he embraced his brother's curse, he was a knight who single handedly slayed the demon prince, but the victory eternally scorched his sword with flame, the curse left him crippled and mute.",
+	question: "A skilled knight of Lothric in his past, Before he embraced his brother's curse, he was a knight who single handedly slayed the demon prince, but the victory eternally scorched his sword with flame, the curse left him crippled and mute.",
 	answers: [taurusDemon, lorian, mirrorKnight, gael],
 	correct: 1
 },
 {
-	question: "Knight, who challenges visitors to the lordless castle. Long ago, the King's Passage was a route taken by the bravest warriors to prove themselves, but now it only prevents one from pursuing the runaway king.",
+	question: "A knight, who challenges visitors to the lordless castle. Long ago, the King's Passage was a route taken by the bravest warriors to prove themselves, but now it only prevents one from pursuing the runaway king.",
 	answers: [capraDemon, yhorm, mirrorKnight, asylumDemon],
 	correct: 2
 },
 {
-	question: "this mage once served as spiritual guides to the scholars of the Grand Archives and one went on to ally with the Undead Legion of Farron.",
+	question: "This mage once served as spiritual guides to the scholars of the Grand Archives and one went on to ally with the Undead Legion of Farron.",
 	answers: [siegmeyer, solaire, crystalSage, yhorm],
 	correct: 2
 },
 {
-	question: "an uncle-like figure to the Painter. Though his exact relation is unknown, he certainly resided in the Painted World for some time, at least until the Painter was locked up.",
+	question: "An uncle-like figure to the Painter. Though his exact relation is unknown, he certainly resided in the Painted World for some time, at least until the Painter was locked up.",
 	answers: [gael, seath, taurusDemon, lorian],
 	correct: 0
 },
@@ -55,7 +55,7 @@ let questions = [{
 	correct: 1
 },
 {
-	question: "once a God of War, and was said to have respect only for arms and nothing else, and wielded the Sunlight Blade and Great Lightning Spear miracles. At some point, he sacrificed everything to ally himself with the Ancient Dragons.",
+	question: "Once a God of War, and was said to have respect only for arms and nothing else, and wielded the Sunlight Blade and Great Lightning Spear miracles. At some point, he sacrificed everything to ally himself with the Ancient Dragons.",
 	answers: [nameless, taurusDemon, seath, lorian],
 	correct: 0
 },
@@ -65,12 +65,12 @@ let questions = [{
 	correct: 3
 },
 {
-	question: "A descendant of Archdragons, was raised by the gods, and owing to his immortality was given a duty to eternally battle the dark, a duty that he would never forget, even after the gods perished.",
+	question: "A descendant of Archdragons, raised by the gods, and owing to his immortality was given a duty to eternally battle the dark, a duty that he would never forget, even after the gods perished.",
 	answers: [seath, midir, asylumDemon, solaire],
 	correct: 1
 },
 {
-	question: "a member of the Warriors of Sunlight covenant. He is a cheerful and powerful knight who does not let the crumbling world affect his mood. He speaks of willingly becoming an Undead so that he could search for his own sun.",
+	question: "A member of the Warriors of Sunlight covenant. He is a cheerful and powerful knight who does not let the crumbling world affect his mood. He speaks of willingly becoming an Undead so that he could search for his own sun.",
 	answers: [nameless, mirrorKnight, solaire, seath],
 	correct: 2
 },
@@ -80,7 +80,7 @@ let questions = [{
 	correct: 0
 },
 {
-	question: "this demon was created by the Bed of Chaos and ensures that only the most powerful Undead are able to escape the Northern Undead Asylum.",
+	question: "This demon was created by the Bed of Chaos and ensures that only the most powerful Undead are able to escape the Northern Undead Asylum.",
 	answers: [taurusDemon, gael, yhorm, asylumDemon],
 	correct: 3
 },
@@ -101,7 +101,7 @@ let questionText = document.querySelector('.question')
 let questionBox = document.querySelector('.questionBox')
 let answerButton = document.querySelectorAll('.option')
 let turn = 0;
-let display = document.querySelectorAll('.displayBox')
+let display = document.querySelector('.displayBox')
 let welcomeButton = document.querySelector('.welcomeButton')
 // for(let i=0; i<picture.length; i++){
 // 	picture[i].addEventListener('click', checkAnswer)
@@ -119,7 +119,7 @@ let welcomeButton = document.querySelector('.welcomeButton')
 
 function changeAnswer(){
 	if(turn === 15){
-	document.querySelector('.winMessage').style.right = '0'
+	document.querySelector('.winMessage').style.right = '3%'
 
 }
 else{
@@ -143,23 +143,19 @@ for(let i=0; i<picture.length; i++){
 	 	}
 	})
 }
-button.addEventListener('mouseover', function(){
-	document.querySelector('.buttonSound').play();
-})
 
 button.addEventListener('click', function(){
 	document.querySelector('.overlay').style.left = "-100%"
 	document.querySelector('.overlay').style.opacity = "0"
 	document.querySelector('.audio').play();
-	questionText.style.WebkitAnimation = 'slideRight 1s forwards'
-	a.style.WebkitAnimaton ='slideRight 1s forwards' 
+	questionText.style.right = '0'
+	display.style.height = '30vh'
+	
 
 })
 welcomeButton.addEventListener('click', function(){
 	document.querySelector('.welcome').style.left = '-100%'
 	document.querySelector('.fire').play();
 })
-if(turn === 15){
-	alert('good job!')
-}
+
 

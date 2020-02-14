@@ -5,10 +5,13 @@
 }
 .displayBox{
 	display: flex;
-	height: 30vh;
+	height: 0;
 	width: 90%;
 	margin: 0 auto;
 	justify-content: space-between;
+	transition: all .6s linear;
+	transition-delay: .8s;
+
 
 
 }
@@ -26,6 +29,9 @@
 	justify-content: space-around;
 	border-radius: 25%;
 	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+.option:focus{
+	border: none;
 }
 .option:hover{
 	height: 50vh;
@@ -46,10 +52,9 @@
 	width: 100%;
 	font-family: 'Quintessential', cursive;
 	color: white;
-	background: rgba(0, 0, 0, 0.7);
-
-
-
+	background: rgba(0, 0, 0, 0.5);
+	transition: all 1s linear;
+	transition-delay: .4s;
 
 }
 .questionBox{
@@ -66,7 +71,7 @@ height: 35vh;
 
 }*/
 .overlay{
-	position: fixed;
+	position: absolute;
 	display: block;
 	color: orange;
 	text-align: center;
@@ -99,11 +104,11 @@ height: 35vh;
 	font-family: 'Fondamento', cursive;
 	right: -100%;
 	padding-top: 5%;
-	background: #5f3735;
-	border: 2px solid black;
+	background: #5f3735 opacity .5;
+	/*border: 2px solid black;*/
 	height: 35%;
 	width: 60%;
-	margin-left: 23%;
+	margin-left: 19%;
 	margin-bottom: -15%;
 	border-radius: 20%;
 	-webkit-animation: slideRight 1s forwards;
@@ -116,6 +121,11 @@ height: 35vh;
 	width: 35%;
 	margin-top: 3%;
 }
+.welcomeButton:hover{
+	color: orange;
+	background: grey;
+}
+
 @-webkit-keyframes slideRight{
 	100% {right: 0;}
 }
@@ -143,19 +153,17 @@ margin-top: 40%;
 .overlayButton:hover{
 	background: #6d6e6a;
 	border: 1px solid #42433e;
-	touch-action: auto;
-
 }
 .winMessage{
 	position: absolute;
 	display: block;
 	width: 90%;
 	right: -100%;
-	height: 43%;
-	background: #6d6e6a;
+	height: 35%;
+	background: rgba(0, 0, 0, .8);
 	color: white;
-	box-shadow: 15px 15px rgba(0, 0, 0, .5);
-	transition: all 0.8s linear;
+	box-shadow: 15px 15px rgba(0, 0, 0, .3);
+	transition: all 0.5s linear;
 
 }
 @-webkit-keyframes slideIn{
@@ -173,45 +181,39 @@ body{
 	overflow: hidden;
 
 }
-@media only screen and (min-width: 600px){
-	.overlayButton{
-		margin-top: 35%;
+@media only screen and (max-width: 600px){
+	h3{
+		font-size: 15px;
 	}
 }
 @media only screen and (min-width: 900px){
 	.overlayButton{
-		margin-top: 25%;
+		margin-top: 20%;
+		margin-left: 10px;
 	}
 	.question{
-		font-size: 25px;
+		font-size: 20px;
 	}
 }
 @media only screen and (max-width: 450px){
 	.overlayButton{
 		margin-top: 65%;
 		width: 20%;
-		margin-left: 15px;
+		margin-left: 18px;
 	}
 	.option{
 		height: 70%;
 	}
-/*	.picture{
-		height: 70%;
-	}*/
-/*	body{
-		background-size: 100vh;
-		height: 800px;
-		width: 100vh;*/
 	
-	html{
+/*	html{
 		background-size: all;
 	}
 	.container{
 		height: 100vh;
 	}
-}
-@media only screen and (max-width: 600px){
+}*/
+/*@media only screen and (max-width: 600px){
 	.overlayButton{
-		margin-top: 20%%;
+		margin-top: 20%;
 	}
-}
+}*/
