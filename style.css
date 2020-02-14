@@ -44,6 +44,7 @@
 	right: -150%;
 	height: 20vh;
 	width: 100%;
+	font-family: 'Quintessential', cursive;
 	color: white;
 	background: rgba(0, 0, 0, 0.7);
 
@@ -85,6 +86,7 @@ height: 35vh;
 }
 .overlayText{
 	position: relative;
+	font-family: 'Fondamento', cursive;
 	margin-bottom: 1%;
 	right: -100%;
 	-webkit-animation: slideRight 1s forwards;
@@ -94,6 +96,7 @@ height: 35vh;
 .welcome{
 	text-align: middle;
 	position: relative;
+	font-family: 'Fondamento', cursive;
 	right: -100%;
 	padding-top: 5%;
 	background: #5f3735;
@@ -119,6 +122,7 @@ height: 35vh;
 .overlayText2{
 	position: relative;
 	padding-bottom: 2%;
+	font-family: 'Fondamento', cursive;
 	right: -100%;
 	-webkit-animation: slideRight 1s forwards;
 	/*-webkit-animation-delay:.5s;*/
@@ -135,6 +139,10 @@ border-color: grey;
 margin-top: 40%;
 -webkit-animation: slideIn 1s forwards;
 }
+.overlayButton:hover{
+	background: #6d6e6a;
+	border: 1px solid orange;
+}
 .winMessage{
 	position: absolute;
 	display: block;
@@ -143,7 +151,7 @@ margin-top: 40%;
 	height: 43%;
 	background: #6d6e6a;
 	color: white;
-	box-shadow: 15px 15px rgba(0, 0, 0, .7);
+	box-shadow: 15px 15px rgba(0, 0, 0, .5);
 	transition: all 0.8s linear;
 
 }
@@ -159,6 +167,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: all;
 	background-position: 50% 50%;
+	overflow: hidden;
 
 }
 @media only screen and (min-width: 600px){

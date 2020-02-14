@@ -120,6 +120,7 @@ let welcomeButton = document.querySelector('.welcomeButton')
 function changeAnswer(){
 	if(turn === 15){
 	document.querySelector('.winMessage').style.right = '0'
+	
 }
 else{
 	a.setAttribute('src', questions[turn].answers[0])
