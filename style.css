@@ -166,6 +166,17 @@ margin-top: 40%;
 	transition: all 0.5s linear;
 
 }
+.wrongAnswer{
+	display: none;
+	margin: 0 auto;
+	margin-top: -10%;
+	margin-bottom: 5%;
+	justify-content: center;
+	text-align: center;
+	height: 15%;
+	width: 15%;
+	background: transparent;
+}
 @-webkit-keyframes slideIn{
 	100% {left: 35%;}
 }

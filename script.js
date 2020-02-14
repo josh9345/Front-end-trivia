@@ -135,11 +135,13 @@ for(let i=0; i<picture.length; i++){
 	picture[i].addEventListener('click', function(event){
 		if(event.target.dataset.number == questions[turn].correct){
 	 		turn++
+	 		document.querySelector('.wrongAnswer').style.display = "none"
 	 		changeAnswer();
 	 		return turn;
 	 	}
 	 	else{
-	 		alert("try again")
+	 		document.querySelector('.wrongAnswer').style.display = "block"
+	 		// alert("try again")
 	 	}
 	})
 }
