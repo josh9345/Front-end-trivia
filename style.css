@@ -162,7 +162,7 @@ margin-top: 40%;
 	height: 35%;
 	background: rgba(0, 0, 0, .8);
 	color: white;
-	box-shadow: 15px 15px rgba(0, 0, 0, .3);
+	box-shadow: 15px 15px rgba(0, 0, 0, .1);
 	transition: all 0.5s linear;
 
 }
@@ -200,7 +200,7 @@ body{
 @media only screen and (min-width: 900px){
 	.overlayButton{
 		margin-top: 20%;
-		margin-left: 10px;
+		/*margin-left: 0;*/
 	}
 	.question{
 		font-size: 20px;
