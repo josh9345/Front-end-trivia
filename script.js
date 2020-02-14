@@ -120,7 +120,7 @@ let welcomeButton = document.querySelector('.welcomeButton')
 function changeAnswer(){
 	if(turn === 15){
 	document.querySelector('.winMessage').style.right = '0'
-	
+
 }
 else{
 	a.setAttribute('src', questions[turn].answers[0])
@@ -143,7 +143,9 @@ for(let i=0; i<picture.length; i++){
 	 	}
 	})
 }
-
+button.addEventListener('mouseover', function(){
+	document.querySelector('.buttonSound').play();
+})
 
 button.addEventListener('click', function(){
 	document.querySelector('.overlay').style.left = "-100%"

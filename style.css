@@ -138,10 +138,13 @@ color: white;
 border-color: grey;
 margin-top: 40%;
 -webkit-animation: slideIn 1s forwards;
+
 }
 .overlayButton:hover{
 	background: #6d6e6a;
-	border: 1px solid orange;
+	border: 1px solid #42433e;
+	touch-action: auto;
+
 }
 .winMessage{
 	position: absolute;
