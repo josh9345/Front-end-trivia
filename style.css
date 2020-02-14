@@ -120,9 +120,10 @@ height: 35vh;
 	height:25%;
 	width: 35%;
 	margin-top: 3%;
+	border: 1px grey solid;
 }
 .welcomeButton:hover{
-	color: orange;
+	color: white;
 	background: grey;
 }
 
