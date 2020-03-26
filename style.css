@@ -99,12 +99,11 @@ height: 35vh;
 
 }
 .welcome{
-	text-align: middle;
 	position: relative;
 	font-family: 'Fondamento', cursive;
 	right: -100%;
 	padding-top: 5%;
-	background: #5f3735 opacity .5;
+	background: #5f3735;
 	/*border: 2px solid black;*/
 	height: 35%;
 	width: 60%;
@@ -188,7 +187,6 @@ h2{
 body{
 	background-image: url(https://images6.alphacoders.com/876/thumb-1920-876133.jpg);
 	background-repeat: no-repeat;
-	background-size: all;
 	background-position: 50% 50%;
 	overflow: hidden;
 
@@ -216,16 +214,4 @@ body{
 	.option{
 		height: 70%;
 	}
-	
-/*	html{
-		background-size: all;
-	}
-	.container{
-		height: 100vh;
-	}
-}*/
-/*@media only screen and (max-width: 600px){
-	.overlayButton{
-		margin-top: 20%;
-	}
-}*/
+}
