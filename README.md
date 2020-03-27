@@ -1,11 +1,37 @@
-# project4
+# Project Title
 
-## technology used 
-This trivia game based on the dark souls videogame series was built using html css and javscript all questions and answers were custom built in javascript and all the images were imported through javascript as well.
+Hello and welcome to dark souls trivia!
 
-## design
-the clickable answer options were built using flex and the overlay and all movement were acheived through transitions and two seperate webkit animations
-the score is kept based on click event on the right answer and the counter is then inputed to the answers variables in order to have the questions and pictures change after correctly answering.
+## Getting Started
 
-## issues
-the incorrect answer curently uses an alert to display but in the future it would display a pop up text overlay indicating a wrong answer
+simply run npm install
+then run index.js
+this will start the game in the browser
+
+### And coding style tests
+
+this application was validated using
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+1. HTML5
+2. CSS3
+3. Javascript
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Version
+
+1.0
+
+## Authors
+
+- **Joshua reed**
+
+## License
