@@ -11,10 +11,12 @@ this will start the game in the browser
 ### And coding style tests
 
 this application was validated using
+https://html5.validator.nu/ &
+https://jigsaw.w3.org/css-validator/
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+not currently deployed
 
 ## Built With
 
