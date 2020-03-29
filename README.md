@@ -11,7 +11,9 @@ While there are no game breaking bugs known at this time this application is sti
 ## Getting Started
 
 simply run npm install
+
 then run index.js
+
 this will start the game in the browser
 
 ### And coding style tests
